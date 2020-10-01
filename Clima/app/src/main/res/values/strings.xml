@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clima</string>
+    <string name="texto_grados">23°</string>
+    <string name="texto_ciudad">Chihuahua</string>
+    <string name="texto_estatus">Nublado</string>
+
+    <string name="texto_bienvenida">
+        Bienvenido a la app del clima, para poder ver el clima
+        de una ciudad selecciona la opción de abajo
+    </string>
+    <string name="texto_boton_chihuahua">Clima de la ciudad de Chihuahua</string>
+    <string name="texto_boton_berlin">Clima de la ciudad de Berlin</string>
+</resources>

@@ -9,6 +9,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.clima.config.Propiedades
 import com.example.clima.response.WeatherResponse
 import com.google.gson.Gson
 import java.lang.Exception
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         tvEstatus = findViewById(R.id.tvEstatus)
 
         val ciudad = intent.getStringExtra("com.example.clima.ciudades.CIUDAD")
-        val apiKey = "5c94e2303436e5b64934ebed7e57253c"
+        val apiKey = Propiedades.apiKey
         val units = "metric"
         val lang= "es"
         if(Network.conectadoAIntenet(this)){
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             //api-key: 5c94e2303436e5b64934ebed7e57253c
 
             val url =
-                "http://api.openweathermap.org/data/2.5/weather?id=$ciudad&appid=$apiKey&units=$units&lang=$lang"
+                "${Propiedades.urlGetWeatherByCityId}?id=$ciudad&appid=$apiKey&units=$units&lang=$lang"
             solicitudHTTPVolley(url)
         }
         else{

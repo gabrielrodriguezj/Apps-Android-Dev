@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Contactos</string>
+
+    <string name="texto_generico">Sin texto</string>
+
+    <string name="descripcion_foto_contacto">Fotografía del contacto</string>
+    <string name="titulo_edad">Edad</string>
+    <string name="titulo_peso">Peso</string>
+    <string name="titulo_telefono">Teléfono</string>
+    <string name="titulo_email">Email</string>
+    <string name="titulo_direccion">Dirección</string>
+
+    <string name="titulo_nuevo">Nuevo contacto</string>
+    <string name="titulo_switch">Cambiar vista</string>
+    <string name="titulo_search">Buscar contacto</string>
+
+
+</resources>
